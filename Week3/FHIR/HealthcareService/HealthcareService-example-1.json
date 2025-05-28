@@ -1,0 +1,59 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "78d08952-ade4-49be-863d-ceb517029196",
+    "identifier": [
+        {
+            "use": "official",
+            "system": "http://co.fhir.guide/NamingSystem/REPS",
+            "value": "DHSS0223129"
+        }
+    ],
+    "active": true,
+    "providedBy": {
+        "reference": "Organization/05004871263"
+    },
+    "location": [
+        {
+            "reference": "Location/SEDE-001"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/REPShealthcareServiceTypes",
+                    "code": "308",
+                    "display": "DERMATOLOGÍA"
+                }
+            ]
+        }
+    ],
+    "name": "Servicio de Dermatología",
+    "availableTime": [
+        {
+            "daysOfWeek": ["mon"],
+            "availableStartTime": "06:00:00",
+            "availableEndTime": "20:00:00"
+        },
+        {
+            "daysOfWeek": ["tue"],
+            "availableStartTime": "07:00:00",
+            "availableEndTime": "20:00:00"
+        },
+        {
+            "daysOfWeek": ["wed"],
+            "availableStartTime": "07:00:00",
+            "availableEndTime": "19:00:00"
+        },
+        {
+            "daysOfWeek": ["thu"],
+            "availableStartTime": "13:00:00",
+            "availableEndTime": "19:00:00"
+        },
+        {
+            "daysOfWeek": ["fri"],
+            "availableStartTime": "11:30:00",
+            "availableEndTime": "19:30:00"
+        }
+    ]
+}

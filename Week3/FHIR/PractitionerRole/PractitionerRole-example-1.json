@@ -1,0 +1,42 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "f4f2d7c4-d3b8-4bff-8576-61ed11a7d608",
+    "identifier": [
+        {
+            "id": "EmployeeIdentifier-0",
+            "use": "usual",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "EI",
+                        "display": "Employee Identifier"
+                    }
+                ]
+            },
+            "system": "http://hptu.org/empleados",
+            "value": "123456789"
+        }
+    ],
+    "active": true,
+    "period": {
+        "start": "2024-10-15"
+    },
+    "organization": {
+        "reference": "Organization/0500123749"
+    },
+    "practitioner": {
+        "reference": "Practitioner/ae385ca2-4b26-497b-8baa-070a44b08c42"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/REPShealthcarePositions",
+                    "code": "033",
+                    "display": "Médico Especialista - Dermatología"
+                }
+            ]
+        }
+    ]
+}

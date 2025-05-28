@@ -1,0 +1,106 @@
+{
+    "resourceType": "Practitioner",
+    "id": "ae385ca2-4b26-497b-8baa-070a44b08c42",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person Number"
+                    },
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianPersonIdentifier",
+                        "code": "CC",
+                        "display": "Cédula de Ciudadanía"
+                    }
+                ]
+            },
+            "value": "7598347509"
+        }
+    ],
+    "active": true,
+    "name" : [
+        {
+            "use": "official",
+            "prefix": [
+                "Dr."
+            ],
+            "family": "Pérez",
+            "given": [
+                "Juan"
+            ],
+            "suffix": [
+                "MD"
+            ]
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1980-01-01",
+    "qualification": [
+        {
+            "identifier": [
+                {
+                    "use": "official",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "LN",
+                                "display": "License Number"
+                            }
+                        ]
+                    },
+                    "system": "http://co.fhir.guide/NamingSystem/RETHUS",
+                    "value": "7598347509",
+                    "period": {
+                        "start": "2010-01-01",
+                        "end": "2029-12-31"
+                    }
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/RETHUSqualification",
+                        "code": "003",
+                        "display": "Medicina"
+                    }
+                ]
+            }
+        },
+        {
+            "identifier": [
+                {
+                    "use": "official",
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "LN",
+                                "display": "License Number"
+                            }
+                        ]
+                    },
+                    "system": "http://co.fhir.guide/NamingSystem/RETHUS",
+                    "value": "7598347509",
+                    "period": {
+                        "start": "2017-01-01",
+                        "end": "2026-12-31"
+                    }
+                }
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/RETHUSqualification",
+                        "code": "M03",
+                        "display": "Dermatología"
+                    }
+                ]
+            }
+        }
+    ]
+}

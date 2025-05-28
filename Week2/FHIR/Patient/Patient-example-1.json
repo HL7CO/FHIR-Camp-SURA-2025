@@ -18,7 +18,75 @@
                     }
                 ]
             },
-            "value": "3349127309"
+            "system": "http://co.fhir.guide/NamingSystem/RNEC",
+            "value": "3349127309",
+            "period": {
+                "start": "2000-01-01"
+            },
+            "assigner": {
+                "display": "Registraduría Nacional del Estado Civil"
+            }
+        },
+        {
+            "use": "old",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PPN",
+                        "display": "Passport number"
+                    }
+                ]
+            },
+            "value": "AF33087",
+            "period": {
+                "start": "2000-01-01",
+                "end": "2010-01-01"
+            }
+        },
+        {
+            "use": "old",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PN",
+                        "display": "Person number"
+                    },
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianPersonIdentifier",
+                        "code": "TI",
+                        "display": "Tarjeta de Identidad"
+                    }
+                ]
+            },
+            "value": "3349127309",
+            "period": {
+                "start": "1990-01-01",
+                "end": "1999-12-31"
+            },
+            "assigner": {
+                "display": "Registraduría Nacional del Estado Civil"
+            }
         }
-    ]
+    ],
+    "active": true,
+    "name": [
+        {
+            "use": "official",
+            "family": "González Pérez",
+            "given": ["Pepito", "Del Jesús"]
+        },
+        {
+            "use": "usual",
+            "text": "Pepe González"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1982-01-01",
+    "managingOrganization": {
+        "display": "Salud SURA",
+        //"reference": "Organization/5ceb57a8-12c0-48b9-bb25-b0de5b4a3289"
+    }
+    
 }

@@ -1,0 +1,86 @@
+{
+    "resourceType": "Organization",
+    "id": "05004871263",
+    "identifier": [
+        {
+            "id": "TaxIdentifier-0",
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "TAX",
+                        "display": "Tax ID number"
+                    },
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianOrganizationIdentifiers",
+                        "code": "NIT",
+                        "display": "Número de Identificación Tributaria"
+                    }
+                ]
+            },
+            "system": "http://co.fhir.guide/NamingSystem/DIAN",
+            "value": "9018889990",
+            "period": {
+                "start": "2010-01-01"
+            }
+        },
+        {
+            "id": "HealthcareProviderIdentifier-0",
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "PRN",
+                        "display": "Provider number"
+                    },
+                    {
+                        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianOrganizationIdentifiers",
+                        "code": "CodigoPrestador",
+                        "display": "Código de habilitación de prestador de servicios de salud"
+                    }
+                ]
+            },
+            "system": "http://co.fhir.guide/NamingSystem/REPS",
+            "value": "05004871263",
+            "period": {
+                "start": "2010-02-01"
+            }
+        }
+    ],
+    "active": true,
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/REPShealthcareProviderTypes",
+                    "code": "IPS",
+                    "display": "Institución Prestadora de Servicios de Salud"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianLegalNatureType",
+                    "code": "PRIV",
+                    "display": "Privada"
+                }
+            ]
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianHealthcareLevel",
+                    "code": "3",
+                    "display": "Nivel I"
+                }
+            ]
+        }
+    ],
+    "name": "IPS SURA",
+    "alias": [
+        "SURA"
+    ]
+}

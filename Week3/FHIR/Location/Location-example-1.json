@@ -1,0 +1,41 @@
+{
+    "resourceType": "Location",
+    "id": "SEDE-001",
+    "identifier":[{
+        "id": "HealthcareProviderIdentifier-0",
+        "use": "official",
+        "type": {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PRN",
+                    "display": "Provider number"
+                },
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianOrganizationIdentifiers",
+                    "code": "CodigoPrestador",
+                    "display": "Código de habilitación de prestador de servicios de salud"
+                }
+            ]
+        },
+        "system": "http://co.fhir.guide/NamingSystem/REPS",
+        "value": "050048712631",
+        "period": {
+            "start": "2010-02-01"
+        }
+    }],
+    "status": "active",
+    "name": "IPS SURA - Industriales",
+    "alias": [
+        "Industriales",
+        "IPS SURA - Industriales",
+        "Sede IPS SURA - Industriales"
+    ],
+    "address": {
+        "use": "work",
+        "text": "Cra 48 # 26-50",
+        "city": "Medellín",
+        "state": "Antioquia",
+        "country": "CO"
+    }
+}

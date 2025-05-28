@@ -1,0 +1,42 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "86c16969-ef30-4df5-8522-60c1ff542098",
+    "identifier": [
+        {
+            "id": "EmployeeIdentifier-0",
+            "use": "usual",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "EI",
+                        "display": "Employee Identifier"
+                    }
+                ]
+            },
+            "system": "http://hospitalmetropolitano.org/empleados",
+            "value": "539847590"
+        }
+    ],
+    "active": true,
+    "period": {
+        "start": "2024-11-15"
+    },
+    "organization": {
+        "reference": "Organization/05004871263"
+    },
+    "practitioner": {
+        "reference": "Practitioner/ae385ca2-4b26-497b-8baa-070a44b08c42"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.fhir.guide/co/CodeSystem/REPShealthcarePositions",
+                    "code": "190",
+                    "display": "Jefe de Oficina (Operativo) - Área Asistencial"
+                }
+            ]
+        }
+    ]
+}
