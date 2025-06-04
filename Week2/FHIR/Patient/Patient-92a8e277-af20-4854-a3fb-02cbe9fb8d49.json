@@ -1,0 +1,181 @@
+{
+  "resourceType": "Patient",
+  "id": "92a8e277-af20-4854-a3fb-02cbe9fb8d49",
+  "meta": {
+    "profile": [
+      "http://co.fhir.guide/core/StructureDefinition/PatientCO"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionPatientNationality",
+      "valueCoding": {
+        "system": "http://terminology.fhir.guide/co/CodeSystem/ISO31661",
+        "code": "170",
+        "display": "Colombia"
+      }
+    },
+    {
+      "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionPatientEthnicity",
+      "valueCoding": {
+        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianEthnicGroup",
+        "code": "05",
+        "display": "Negro(a)"
+      }
+    },
+    {
+      "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionPatientPopulationGroup",
+      "valueCoding": {
+        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianPopulationGroup",
+        "code": "5",
+        "display": "POBLACIÓN CON SISBEN"
+      }
+    },
+    {
+      "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionPatientDisability",
+      "valueCoding": {
+        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianDisabilityClassification",
+        "code": "08",
+        "display": "Sin discapacidad"
+      }
+    },
+    {
+      "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionPatientGenderIdentity",
+      "valueCoding": {
+        "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianGenderIdentity",
+        "code": "02",
+        "display": "Femenino"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PN",
+            "display": "Person number"
+          },
+          {
+            "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianPersonIdentifier",
+            "code": "CC",
+            "display": "Cédula ciudadanía"
+          }
+        ]
+      },
+      "period": {
+        "start": "2013-04-05"
+      },
+      "id": "NationalPersonIdentifier-0",
+      "use": "official",
+      "system": "http://co.fhir.guide/NamingSystem/RNEC",
+      "value": "324283476"
+    },
+    {
+      "assigner": {
+        "reference": "Organization/3565ccc1-95b4-47ef-8cc9-5652dba007e6",
+        "display": "Hospital General Central"
+      },
+      "id": "PatientMedicalRecordNumber-0",
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "code": "MR",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Medical record number"
+          }
+        ]
+      },
+      "value": "HC-324283476"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Mónica",
+        "María"
+      ],
+      "use": "official",
+      "family": "Mora Jaramillo",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionFathersFamilyName",
+            "valueString": "Mora"
+          },
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionMothersFamilyName",
+            "valueString": "Jaramillo"
+          }
+        ]
+      }
+    },
+    {
+      "use": "usual",
+      "text": "Mónica Mora"
+    }
+  ],
+  "telecom": [
+    {
+      "id": "TelecomPhone-0",
+      "system": "phone",
+      "value": "+57(604)111-1111"
+    },
+    {
+      "id": "TelecomEmail-0",
+      "system": "email",
+      "value": "monica.mora@example.com"
+    }
+  ],
+  "address": [
+    {
+      "id": "HomeAddress-0",
+      "use": "home",
+      "type": "physical",
+      "text": "Cl. 6 Sur #15 43a, El Poblado",
+      "city": "Medellín",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionDivipolaMunicipality",
+            "valueCoding": {
+              "code": "05001",
+              "system": "http://terminology.fhir.guide/co/CodeSystem/DIVIPOLA"
+            }
+          }
+        ]
+      },
+      "district": "comuna 14",
+      "state": "Antioqia",
+      "_state": {
+        "extension": [
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionDivipolaDepartment",
+            "valueCoding": {
+              "code": "05",
+              "system": "http://terminology.fhir.guide/co/CodeSystem/DIVIPOLA"
+            }
+          }
+        ]
+      },
+      "postalCode": "050022",
+      "country": "CO"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "code": "M",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "display": "Married"
+      }
+    ],
+    "text": "Casado(a)"
+  },
+  "active": true,
+  "gender": "female",
+  "birthDate": "1995-04-05",
+  "deceasedBoolean": false
+}

@@ -1,0 +1,139 @@
+{
+  "resourceType": "Organization",
+  "id": "3565ccc1-95b4-47ef-8cc9-5652dba007e6",
+  "meta": {
+    "profile": [
+      "http://co.fhir.guide/core/StructureDefinition/CareDeliveryOrganizationCO"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "TAX",
+            "display": "Tax ID number"
+          },
+          {
+            "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianOrganizationIdentifiers",
+            "code": "NIT",
+            "display": "Número de Identificación Tributaria"
+          }
+        ]
+      },
+      "period": {
+        "start": "1982-07-20"
+      },
+      "id": "TaxIdentifier-0",
+      "use": "official",
+      "system": "http://co.fhir.guide/NamingSystem/DIAN",
+      "value": "9000000-0"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "PRN",
+            "display": "Provider number"
+          },
+          {
+            "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianOrganizationIdentifiers",
+            "code": "CodigoPrestador",
+            "display": "Código de habilitación de prestador de servicios de salud"
+          }
+        ]
+      },
+      "period": {
+        "start": "1997-07-20"
+      },
+      "id": "HealthcareProviderIdentifier-0",
+      "use": "official",
+      "system": "http://co.fhir.guide/NamingSystem/REPS",
+      "value": "1100100011"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianProviderClass",
+          "code": "IPS",
+          "display": "Institución Prestadora de Servicios de Salud"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianLegalNatureType",
+          "code": "PRIV",
+          "display": "Privada"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.fhir.guide/co/CodeSystem/ColombianHealthcareLevel",
+          "code": "4",
+          "display": "Nivel IV"
+        }
+      ]
+    }
+  ],
+  "alias": [
+    "HGC",
+    "HOSPITAL CENTRAL",
+    "HOSPITAL GENERAL"
+  ],
+  "telecom": [
+    {
+      "id": "TelecomPhone-0",
+      "system": "phone",
+      "value": "+57(000)000-0000"
+    },
+    {
+      "id": "TelecomURL-0",
+      "system": "url",
+      "value": "http://hospital.example.com"
+    }
+  ],
+  "address": [
+    {
+      "use": "work",
+      "type": "physical",
+      "country": "CO",
+      "text": "Cl. 7 #40 00, Chapinero",
+      "city": "Bogotá D.C.",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionDivipolaMunicipality",
+            "valueCoding": {
+              "code": "11001",
+              "system": "http://terminology.fhir.guide/co/CodeSystem/DIVIPOLA"
+            }
+          }
+        ]
+      },
+      "district": "Chapinero",
+      "state": "Bogotá D.C.",
+      "_state": {
+        "extension": [
+          {
+            "url": "http://co.fhir.guide/core/StructureDefinition/ExtensionDivipolaDepartment",
+            "valueCoding": {
+              "code": "11",
+              "system": "http://terminology.fhir.guide/co/CodeSystem/DIVIPOLA"
+            }
+          }
+        ]
+      },
+      "postalCode": "11001"
+    }
+  ],
+  "active": true,
+  "name": "HOSPITAL GENERAL CENTRAL"
+}
